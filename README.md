@@ -5,6 +5,9 @@ To test it out, simply execute the following command:
 
     $./gradlew gatlingRun --simulation pac.CaseListSimulation -Dusername=[username] -Dpassword=[password] -Denv=dev -Dusers=1 -Dramp=10 -Dpause=2 -Dcourtcode=B14LO
 
+    # Gradle will now automatically add the -Dusername and -Dpassword for you
+    $./gradlew gatlingRun --simulation pac.CaseListSimulation -Dusers=1 -Dramp=10 -Dpause=2 -Dcourtcode=B14LO
+
     --simulation => Specify which simulation to run. Not supplying this flag will present a menu to choose the simulation to run
     --all => will run all simultions
     -Dusername => Username for auth [required]
